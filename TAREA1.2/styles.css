@@ -119,6 +119,36 @@ input[type="checkbox"] {
     vertical-align: -3px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    background-color: var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+th, td {
+    padding: 12px 18px;
+    text-align: left;
+    border: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--primary-dark);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+col.col-secundaria {
+    background-color: #f1e7d5;
+}
+
+col.col-destacada {
+    background-color: #e1f0f3;
+}
+
 @media (max-width: 560px) {
     body {
         padding: 32px 16px 48px;
