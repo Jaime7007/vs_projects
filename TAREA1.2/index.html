@@ -59,5 +59,22 @@
         <param name="autoplay" value="true">
         <p>El navegador ignora la etiqueta param y no ejecuta el recurso por estar en desuso.</p>
     </object>
+    <h2>Etiqueta source</h2>
+    <p>La etiqueta <code>&lt;video&gt;</code> permite reproducir archivos de vídeo. Al incluir varias etiquetas <code>&lt;source&gt;</code>, el navegador elige el primer formato compatible.</p>
+    <video controls style="width: 100%">
+        <source src="videos_y_audios/videoprueba.mp4" type="video/mp4">
+        <source src="videos_y_audios/videoprueba.webm" type="video/webm">
+        Tu navegador no soporta el elemento de vídeo.
+    </video>
+
+    <p>La etiqueta <code>&lt;audio&gt;</code> funciona igual para archivos de sonido, ofreciendo alternativas de formato mediante <code>&lt;source&gt;</code>.</p>
+    <audio controls style="width: 100%">
+        <source src="videos_y_audios/audioprueba.mp3" type="audio/mpeg">
+        <source src="videos_y_audios/audioprueba.ogg" type="audio/ogg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <h2>Etiqueta wbr</h2>
+    <p>La etiqueta <code>&lt;wbr&gt;</code> indica un lugar donde el navegador tiene permiso para dividir una palabra mediante un salto de línea si la pantalla es muy estrecha.</p>
+    <p>Ejemplo: Supercalifragilisticoespialidoso<wbr>ConUnSaltoDeLineaOpcional</p>
 </body>
 </html>
