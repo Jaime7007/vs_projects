@@ -61,5 +61,12 @@
     <h2>Etiqueta embed</h2>
     <p>La etiqueta <code>&lt;embed&gt;</code> incrusta un recurso o contenido externo interactivo en la página web.</p>
     <embed src="documentos/html_1_introduccion.pdf" type="application/pdf" width="100%" height="500">
+    <h2>Etiqueta param</h2>
+    <p>La etiqueta <code>&lt;param&gt;</code> va dentro de un elemento <code>&lt;object&gt;</code> y se utilizaba históricamente para pasar parámetros de configuración a complementos o applets (como Adobe Flash Player).</p>
+    <p>Actualmente esta etiqueta está <strong>obsoleta en HTML5</strong>. Aunque el elemento <code>&lt;object&gt;</code> se utilice para cargar un recurso externo, la etiqueta <code>&lt;param&gt;</code> es ignorada por el navegador y <strong>no genera ningún efecto visible</strong> porque los navegadores modernos han eliminado el soporte para plugins de terceros y no procesan este tipo de parámetros.</p>
+    <object data="documentos/manual_html.pdf" type="application/pdf" width="100%" height="500">
+        <param name="autoplay" value="true">
+        <p>El navegador ignora la etiqueta param y no ejecuta el recurso por estar en desuso.</p>
+    </object>
 </body>
 </html>
